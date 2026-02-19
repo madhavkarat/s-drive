@@ -18,8 +18,8 @@ A Google Photos-inspired document & image archive website for transparency and p
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/d-drive.git
-cd d-drive
+git clone https://github.com/madhavkarat/s-drive.git
+cd s-drive
 
 # Open in browser (no build step needed!)
 open index.html
