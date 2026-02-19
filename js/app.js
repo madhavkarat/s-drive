@@ -161,7 +161,7 @@
       description: 'Seed image loaded from code.',
       createdAt: '2026-01-12'
     },
-    
+
     {
       src: 'img/d17.jpeg',
       fileName: '',
@@ -178,7 +178,7 @@
       description: '',
       createdAt: '2026-01-12'
     },
-    
+
     {
       src: 'img/d19.jpeg',
       fileName: '',
@@ -202,7 +202,7 @@
       tags: [''],
       description: '',
       createdAt: '2026-01-12'
-    },{
+    }, {
       src: 'img/d22.jpeg',
       fileName: '',
       album: 'Drishti',
@@ -298,7 +298,7 @@
       description: '',
       createdAt: '2026-01-12'
     },
-    
+
 
   ];
 
@@ -737,11 +737,10 @@
     photoGrid.style.height = `${height}px`;
 
     if (buckets.length === 0) {
-      photoGrid.innerHTML = `<div class="network-empty-note">${
-        folderOnly
+      photoGrid.innerHTML = `<div class="network-empty-note">${folderOnly
           ? (isAdmin ? 'No case files yet. Create one above.' : 'No case files yet.')
           : 'No evidence in this view.'
-      }</div>`;
+        }</div>`;
       return;
     }
 
