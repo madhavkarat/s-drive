@@ -1,5 +1,5 @@
 /* ===========================================
-   D-Drive — Security Module
+   S-DRIVE — Security Module
    Handles authentication, input sanitization,
    anti-tampering, rate limiting, and session management.
    =========================================== */
@@ -240,7 +240,7 @@ const DDriveSecurity = (() => {
       ) {
         if (!devtoolsOpen) {
           devtoolsOpen = true;
-          console.log('%c⚠️ D-Drive Security Notice', 'font-size:24px;color:red;font-weight:bold;');
+          console.log('%c⚠️ S-DRIVE Security Notice', 'font-size:24px;color:red;font-weight:bold;');
           console.log('%cThis is a protected archive. Unauthorized access attempts are logged.', 'font-size:14px;color:orange;');
         }
       } else {

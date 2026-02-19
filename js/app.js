@@ -1,5 +1,5 @@
 /* ===========================================
-   D-Drive — App Logic (Security Hardened)
+   S-DRIVE — App Logic (Security Hardened)
    Uses DDriveSecurity module for all auth,
    sanitization, and data integrity.
    =========================================== */
@@ -26,9 +26,9 @@
   // { src: 'img/my-photo.jpg', album: 'Case A', tags: ['witness'], description: '...', createdAt: '2026-01-15' }
   const CODE_IMAGE_LIBRARY = [
     {
-      src: 'img/backdrop.jpg',
-      fileName: 'backdrop.jpg',
-      album: 'Main Archive',
+      src: 'img/d1.jpeg',
+      fileName: '',
+      album: 'Drishti',
       tags: ['overview', 'scene'],
       description: 'Seed image loaded from code.',
       createdAt: '2026-01-10'
@@ -36,12 +36,272 @@
     {
       src: 'img/avatar.png',
       fileName: 'avatar.png',
-      album: 'Profiles',
+      album: 'DHWANI',
       tags: ['profile'],
       description: 'Seed image loaded from code.',
       createdAt: '2026-01-12'
-    }
+    },
+    {
+      src: 'img/d2.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d3.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d4.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d5.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d6.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d7.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d8.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d9.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d10.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d11.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d12.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d13.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d14.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d15.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d16.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    
+    {
+      src: 'img/d17.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: ['profile'],
+      description: 'Seed image loaded from code.',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d18.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    
+    {
+      src: 'img/d19.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d20.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d21.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },{
+      src: 'img/d22.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d23.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d24.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d25.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d26.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d27.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d28.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d29.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d30.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d31.jpeg',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d32.png',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    {
+      src: 'img/d33.png',
+      fileName: '',
+      album: 'Drishti',
+      tags: [''],
+      description: '',
+      createdAt: '2026-01-12'
+    },
+    
+
   ];
+
 
   // ---- DOM ----
   const $ = (sel) => document.querySelector(sel);
@@ -57,6 +317,7 @@
   const uploadBtn = $('#uploadBtn');
   const fileInput = $('#fileInput');
   const uploadZone = $('#uploadZone');
+  const mobileBackdrop = $('#mobileBackdrop');
   const sidebar = $('#sidebar');
   const mainContent = $('#mainContent');
   const lightbox = $('#lightbox');
@@ -74,6 +335,31 @@
   const adminIcon = $('#adminIcon');
   const totalPhotosEl = $('#totalPhotos');
   const totalAlbumsEl = $('#totalAlbums');
+
+  function isMobileViewport() {
+    return window.matchMedia('(max-width: 900px)').matches;
+  }
+
+  function setSidebarOpen(open) {
+    if (isMobileViewport()) {
+      sidebar.classList.remove('collapsed');
+      sidebar.classList.toggle('open', open);
+      mainContent.classList.remove('expanded');
+      document.body.classList.toggle('sidebar-open', open);
+      if (mobileBackdrop) {
+        mobileBackdrop.classList.toggle('active', open);
+      }
+      return;
+    }
+
+    sidebar.classList.remove('open');
+    sidebar.classList.toggle('collapsed', !open);
+    mainContent.classList.toggle('expanded', !open);
+    document.body.classList.remove('sidebar-open');
+    if (mobileBackdrop) {
+      mobileBackdrop.classList.remove('active');
+    }
+  }
 
   // ---- Secure Save/Load ----
   async function save() {
@@ -304,9 +590,7 @@
   function getFilteredPhotos() {
     let list = photos.filter(p => !p.trashed);
 
-    if (currentFilter === 'starred') {
-      list = list.filter(p => p.starred);
-    } else if (currentFilter === 'recent') {
+    if (currentFilter === 'recent') {
       list = [...list].sort((a, b) => b.createdAt - a.createdAt).slice(0, 50);
     } else if (currentFilter === 'trash') {
       list = photos.filter(p => p.trashed);
@@ -402,9 +686,17 @@
 
   function renderNetworkView(list, folderOnly = false) {
     const width = Math.max(photoGrid.clientWidth || 900, 360);
-    const height = Math.max(folderOnly ? 520 : 620, Math.round(width * (folderOnly ? 0.58 : 0.66)));
+    const mobile = isMobileViewport();
+    const minHeight = mobile ? (folderOnly ? 430 : 470) : (folderOnly ? 520 : 620);
+    const height = Math.max(
+      minHeight,
+      Math.round(width * (folderOnly ? (mobile ? 0.72 : 0.58) : (mobile ? 0.85 : 0.66)))
+    );
     const centerX = width / 2;
     const centerY = height / 2;
+    const folderPadX = mobile ? 56 : 88;
+    const folderPadY = mobile ? 62 : 84;
+    const photoPad = mobile ? 34 : 44;
 
     const activePhotos = photos.filter(p => !p.trashed);
     let buckets = [];
@@ -475,8 +767,8 @@
     buckets.forEach((bucket, index) => {
       let angle = -Math.PI / 2 + ((Math.PI * 2) * index / Math.max(folderCount, 1));
       if (folderCount === 1) angle = -Math.PI / 2;
-      const x = clamp(centerX + Math.cos(angle) * orbit, 88, width - 88);
-      const y = clamp(centerY + Math.sin(angle) * orbit, 84, height - 84);
+      const x = clamp(centerX + Math.cos(angle) * orbit, folderPadX, width - folderPadX);
+      const y = clamp(centerY + Math.sin(angle) * orbit, folderPadY, height - folderPadY);
 
       folderPositions.push({ x, y });
       lines.push(`<line class="web-link hub-link" x1="${centerX}" y1="${centerY}" x2="${x}" y2="${y}"></line>`);
@@ -497,7 +789,7 @@
 
       if (folderOnly) return;
 
-      const maxPerFolder = 16;
+      const maxPerFolder = window.innerWidth <= 600 ? 6 : (mobile ? 8 : 16);
       const photosToShow = bucket.photos.slice(0, maxPerFolder);
       const hiddenCount = bucket.photos.length - photosToShow.length;
       const spread = photosToShow.length <= 1
@@ -509,8 +801,8 @@
         const theta = angle + (t * spread) + ((photoIndex % 2 === 0) ? 0.05 : -0.05);
         const ring = Math.floor(photoIndex / 8);
         const distance = 96 + (ring * 52) + ((photoIndex % 3) * 3);
-        const px = clamp(x + Math.cos(theta) * distance, 44, width - 44);
-        const py = clamp(y + Math.sin(theta) * distance, 44, height - 44);
+        const px = clamp(x + Math.cos(theta) * distance, photoPad, width - photoPad);
+        const py = clamp(y + Math.sin(theta) * distance, photoPad, height - photoPad);
         const safeName = DDriveSecurity.sanitizeText(photo.fileName);
         const safeId = DDriveSecurity.sanitizeText(photo.id);
         const safeDate = DDriveSecurity.sanitizeText(formatDate(photo.createdAt));
@@ -522,7 +814,7 @@
             <img src="${photo.dataURL}" alt="${safeName}" loading="lazy" />
             ${photo.starred ? '<span class="photo-badge material-icons">star</span>' : ''}
             ${isAdmin ? `
-              <button class="node-star-btn ${photo.starred ? 'starred' : ''}" data-action="star" data-id="${safeId}" title="Toggle key evidence">
+              <button class="node-star-btn ${photo.starred ? 'starred' : ''}" data-action="star" data-id="${safeId}" title="Toggle star">
                 <span class="material-icons">${photo.starred ? 'star' : 'star_border'}</span>
               </button>
             ` : ''}
@@ -583,7 +875,6 @@
 
     const titles = {
       all: 'All Evidence Network',
-      starred: 'Key Evidence Network',
       recent: 'Recent Upload Network',
       trash: 'Trash Network',
       albums: 'Case File Network'
@@ -767,17 +1058,28 @@
       currentFilter = link.dataset.filter;
       updateAdminUI();
       render();
+      if (isMobileViewport()) {
+        setSidebarOpen(false);
+      }
     });
   });
 
   $('#menuToggle').addEventListener('click', () => {
-    sidebar.classList.toggle('collapsed');
-    sidebar.classList.toggle('open');
-    mainContent.classList.toggle('expanded');
+    if (isMobileViewport()) {
+      setSidebarOpen(!sidebar.classList.contains('open'));
+    } else {
+      setSidebarOpen(sidebar.classList.contains('collapsed'));
+    }
     if (photoGrid.classList.contains('network-map')) {
       setTimeout(render, 220);
     }
   });
+
+  if (mobileBackdrop) {
+    mobileBackdrop.addEventListener('click', () => {
+      setSidebarOpen(false);
+    });
+  }
 
   searchInput.addEventListener('input', () => {
     currentSearch = searchInput.value.trim();
@@ -798,6 +1100,15 @@
 
   let resizeTimer = null;
   window.addEventListener('resize', () => {
+    if (!isMobileViewport()) {
+      document.body.classList.remove('sidebar-open');
+      if (mobileBackdrop) mobileBackdrop.classList.remove('active');
+      sidebar.classList.remove('open');
+    } else if (!sidebar.classList.contains('open')) {
+      document.body.classList.remove('sidebar-open');
+      if (mobileBackdrop) mobileBackdrop.classList.remove('active');
+    }
+
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
       if (photoGrid.classList.contains('network-map')) {
@@ -886,6 +1197,10 @@
   });
 
   document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isMobileViewport() && sidebar.classList.contains('open')) {
+      setSidebarOpen(false);
+      return;
+    }
     if (adminModal.classList.contains('active')) return;
     if (!lightbox.classList.contains('active')) return;
     if (e.key === 'Escape') closeLightbox();
@@ -906,6 +1221,7 @@
       isAdmin = true;
     }
 
+    setSidebarOpen(!isMobileViewport());
     updateAdminUI();
     render();
   }
