@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <!-- SECURITY HEADERS -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self';
+    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: blob:;
+    connect-src 'self';
+    frame-src 'none';
+    object-src 'none';
+    base-uri 'self';
+  " />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D-Drive â€” Exposing SFI</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+<body>
+
+  <!-- TOP NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <button class="icon-btn menu-btn" id="menuToggle">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="brand">
+        <span class="brand-icon material-icons">folder_shared</span>
+        <span class="brand-name">D-Drive</span>
+      </div>
+    </div>
+    <div class="navbar-center">
+      <div class="search-bar">
+        <span class="material-icons search-icon">search</span>
+        <input type="text" id="searchInput" placeholder="Search evidence by tag, name, or description..." />
+        <button class="icon-btn" id="clearSearch" style="display:none;">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <button class="icon-btn" id="gridToggle" title="Toggle grid size">
+        <span class="material-icons">grid_view</span>
+      </button>
+      <button class="icon-btn admin-only" id="uploadBtn" title="Upload photos" style="display:none;">
+        <span class="material-icons">add_photo_alternate</span>
+      </button>
+      <button class="icon-btn" id="adminToggle" title="Admin login">
+        <span class="material-icons" id="adminIcon">lock</span>
+      </button>
+      <img class="avatar" src="img/avatar.png" alt="D-Drive" title="D-Drive" />
+    </div>
+  </header>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <nav class="sidebar-nav">
+      <a href="#" class="sidebar-link active" data-filter="all">
+        <span class="material-icons">photo_library</span>
+        <span class="link-text">All Evidence</span>
+      </a>
+      <a href="#" class="sidebar-link" data-filter="starred">
+        <span class="material-icons">star</span>
+        <span class="link-text">Key Evidence</span>
+      </a>
+      <a href="#" class="sidebar-link" data-filter="albums">
+        <span class="material-icons">photo_album</span>
+        <span class="link-text">Case Files</span>
+      </a>
+      <a href="#" class="sidebar-link" data-filter="recent">
+        <span class="material-icons">schedule</span>
+        <span class="link-text">Recent Uploads</span>
+      </a>
+      <a href="#" class="sidebar-link admin-only" data-filter="trash" style="display:none;">
+        <span class="material-icons">delete</span>
+        <span class="link-text">Trash</span>
+      </a>
+    </nav>
+
+    <!-- Sidebar Bold Text / Stats -->
+    <div class="sidebar-stats">
+      <div class="stat-item">
+        <span class="stat-number" id="totalPhotos">0</span>
+        <span class="stat-label">Files Exposed</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" id="totalAlbums">0</span>
+        <span class="stat-label">Case Files</span>
+      </div>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="storage-info">
+        <span class="material-icons">cloud</span>
+        <span class="link-text" id="storageText">0 photos</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content" id="mainContent">
+
+    <!-- ============================== -->
+    <!-- HERO / BACKDROP SECTION        -->
+    <!-- ============================== -->
+    <section class="hero" id="heroSection">
+      <div class="hero-backdrop">
+        <img src="img/backdrop.jpg" alt="Backdrop" />
+        <div class="hero-overlay"></div>
+      </div>
+           <div class="hero-content">
+        <h1 class="hero-title">D-DRIVE</h1>
+        <p class="hero-subtitle">EXPOSING THE TRUTH<span class="highlight"></span></p>
+        <div class="hero-divider"></div>
+        <p class="hero-description">
+          <strong>This archive contains photographic evidence and documentation of misconduct and corruption</strong>. 
+          Every image here is sourced, verified, and published in the public interest.
+        </p>
+        <div class="hero-bold-statements">
+          <p><strong>"The truth cannot be silenced."</strong></p>
+          <p><strong>"Every act of violence leaves a trail."</strong></p>
+          <p><strong>"Accountability is not optional."</strong></p>
+        </div>
+        <a href="#gallery" class="hero-cta">
+          <span class="material-icons">arrow_downward</span>
+          View the Evidence
+        </a>
+      </div>
+       
+        
+    </section>
+
+    <!-- ============================== -->
+    <!-- BOLD TEXT BANNER                -->
+    <!-- ============================== -->
+    <section class="info-banner" id="gallery">
+      <div class="info-banner-content">
+        <div class="info-card">
+          <span class="material-icons">visibility</span>
+          <h3>Transparency</h3>
+          <p><strong>All evidence is publicly accessible.</strong> No paywalls, no censorship.</p>
+        </div>
+        <div class="info-card">
+          <span class="material-icons">verified</span>
+          <h3>Verified</h3>
+          <p><strong>Every photo is authenticated</strong> and cross-referenced with public records.</p>
+        </div>
+        <div class="info-card">
+          <span class="material-icons">gavel</span>
+          <h3>Accountability</h3>
+          <p><strong>Those responsible must answer.</strong> This archive ensures nothing is forgotten.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upload Area (admin only) -->
+    <div class="upload-zone admin-only" id="uploadZone" style="display:none;">
+      <div class="upload-zone-content">
+        <span class="material-icons upload-zone-icon">cloud_upload</span>
+        <h2>Drag & drop evidence here</h2>
+        <p>or click to browse files</p>
+        <label class="upload-browse-btn" for="fileInput">Browse Files</label>
+        <input type="file" id="fileInput" multiple accept="image/*" hidden />
+      </div>
+    </div>
+
+    <!-- Album Creator (admin only) -->
+    <div class="album-bar admin-only" id="albumBar" style="display:none;">
+      <input type="text" id="albumNameInput" placeholder="New case file name..." />
+      <button class="btn-primary" id="createAlbumBtn">Create Case File</button>
+    </div>
+
+    <!-- Section Header -->
+    <div class="section-header" id="sectionHeader">
+      <h2 id="sectionTitle">All Evidence</h2>
+      <span class="photo-count" id="photoCount"></span>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="photo-grid" id="photoGrid"></div>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="emptyState">
+      <span class="material-icons">photo_camera</span>
+      <h3>No evidence uploaded yet</h3>
+      <p>Check back later for updates.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p><strong>D-Drive</strong> â€” A public archive for truth and accountability.</p>
+        <p class="footer-disclaimer">
+          <strong>Disclaimer:</strong> All content published here is for public awareness. 
+          We do not promote violence or hatred. We promote <strong>truth, transparency, and justice</strong>.
+        </p>
+        <p class="footer-copy">&copy; 2026 D-Drive. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- LIGHTBOX / VIEWER -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-header">
+      <div class="lightbox-info" id="lightboxInfo"></div>
+      <div class="lightbox-actions">
+        <button class="icon-btn light admin-only" id="lbStar" title="Star" style="display:none;">
+          <span class="material-icons">star_border</span>
+        </button>
+        <button class="icon-btn light" id="lbDownload" title="Download">
+          <span class="material-icons">file_download</span>
+        </button>
+        <button class="icon-btn light admin-only" id="lbDelete" title="Delete" style="display:none;">
+          <span class="material-icons">delete</span>
+        </button>
+        <button class="icon-btn light" id="lbClose" title="Close">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+    </div>
+    <button class="lightbox-nav lightbox-prev" id="lbPrev">
+      <span class="material-icons">chevron_left</span>
+    </button>
+    <div class="lightbox-image-container">
+      <img id="lightboxImg" src="" alt="" />
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lbNext">
+      <span class="material-icons">chevron_right</span>
+    </button>
+  </div>
+
+  <!-- Tag/Description Modal (admin only) -->
+  <div class="modal-overlay" id="tagModal">
+    <div class="modal">
+      <h3>Add Evidence Details</h3>
+      <p class="modal-subtitle" id="modalFileCount"></p>
+      <label>Tags (comma separated)</label>
+      <input type="text" id="tagInput" placeholder="e.g. violence, protest, campus, 2024" />
+      <label>Description</label>
+      <textarea id="descInput" placeholder="Describe the evidence..." rows="3"></textarea>
+      <label>Case File</label>
+      <select id="albumSelect">
+        <option value="">No case file</option>
+      </select>
+      <div class="modal-actions">
+        <button class="btn-secondary" id="skipTagBtn">Skip</button>
+        <button class="btn-primary" id="saveTagBtn">Save & Upload</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADMIN LOGIN MODAL -->
+  <div class="modal-overlay" id="adminModal">
+    <div class="modal">
+      <h3>ðŸ” Admin Login</h3>
+      <p class="modal-subtitle">Enter admin password to manage evidence</p>
+      <label>Password</label>
+      <input type="password" id="adminPasswordInput" placeholder="Enter admin password..." />
+      <p class="error-text" id="adminError" style="display:none;">Incorrect password. Try again.</p>
+      <div class="modal-actions">
+        <button class="btn-secondary" id="adminCancelBtn">Cancel</button>
+        <button class="btn-primary" id="adminLoginBtn">Login</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/security.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
